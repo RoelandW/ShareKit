@@ -59,6 +59,17 @@
  leaving that decision up to the user.
  */
 
+// Hyves
+- (NSString*)hyvesConsumerKey
+{
+	return @"";
+}
+
+- (NSString*)hyvesSecretKey
+{
+	return @"";
+}
+
 // Vkontakte
 // SHKVkontakteAppID is the Application ID provided by Vkontakte
 - (NSString*)vkontakteAppId {
