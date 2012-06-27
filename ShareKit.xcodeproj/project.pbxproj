@@ -162,7 +162,6 @@
 		7AB534C81552BE7D00171BCE /* UIWebView+SHK.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5367A11DBE3B9004A1712 /* UIWebView+SHK.m */; };
 		7AB534CA1552BE7D00171BCE /* NSMutableDictionary+NSNullsToEmptyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A25903614CD4E8000FBA124 /* NSMutableDictionary+NSNullsToEmptyStrings.m */; };
 		7AB534CC1552BE7D00171BCE /* NSHTTPCookieStorage+DeleteForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A333EE414CC5B9D0060900C /* NSHTTPCookieStorage+DeleteForURL.m */; };
-		7AB534CE1552BE7D00171BCE /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2523714F0499E00CE8709 /* JSONKit.m */; };
 		7AB534D01552BE7D00171BCE /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A57772B314BA0748003FC744 /* SSKeychain.m */; };
 		7AB534D21552BE7D00171BCE /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5368211DBE3B9004A1712 /* NSMutableURLRequest+Parameters.m */; };
 		7AB534D41552BE7D00171BCE /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5368411DBE3B9004A1712 /* NSString+URLEncoding.m */; };
@@ -525,8 +524,6 @@
 		7AC22D3214580A2000126878 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		7ACA93FB156D192100E7006E /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
 		7ACA93FC156D192100E7006E /* FBFrictionlessRequestSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFrictionlessRequestSettings.m; sourceTree = "<group>"; };
-		7AF2523614F0499E00CE8709 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		7AF2523714F0499E00CE8709 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		7AF78BB114B71FD8008ACA5D /* SHKFormControllerLargeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKFormControllerLargeTextField.h; sourceTree = "<group>"; };
 		7AF78BB214B71FD8008ACA5D /* SHKFormControllerLargeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKFormControllerLargeTextField.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ShareKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ShareKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -902,7 +899,6 @@
 		43A5367B11DBE3B9004A1712 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F92EF477148E8F1A0070F913 /* JSONKit */,
 				43A5367C11DBE3B9004A1712 /* Keychain */,
 				43A5367F11DBE3B9004A1712 /* OAuth */,
 				43A536A411DBE3B9004A1712 /* SHKRequest.h */,
@@ -1391,16 +1387,6 @@
 			path = "Logout of All Services";
 			sourceTree = "<group>";
 		};
-		F92EF477148E8F1A0070F913 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				7AF2523614F0499E00CE8709 /* JSONKit.h */,
-				7AF2523714F0499E00CE8709 /* JSONKit.m */,
-			);
-			name = JSONKit;
-			path = ../../../../Submodules/JSONKit;
-			sourceTree = "<group>";
-		};
 		FA5AA3B4149625010064DB24 /* Vkontakte */ = {
 			isa = PBXGroup;
 			children = (
@@ -1750,7 +1736,6 @@
 				7AB534C81552BE7D00171BCE /* UIWebView+SHK.m in Sources */,
 				7AB534CA1552BE7D00171BCE /* NSMutableDictionary+NSNullsToEmptyStrings.m in Sources */,
 				7AB534CC1552BE7D00171BCE /* NSHTTPCookieStorage+DeleteForURL.m in Sources */,
-				7AB534CE1552BE7D00171BCE /* JSONKit.m in Sources */,
 				7AB534D01552BE7D00171BCE /* SSKeychain.m in Sources */,
 				7AB534D21552BE7D00171BCE /* NSMutableURLRequest+Parameters.m in Sources */,
 				7AB534D41552BE7D00171BCE /* NSString+URLEncoding.m in Sources */,
