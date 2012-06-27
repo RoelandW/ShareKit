@@ -146,14 +146,11 @@
 	// some URLs already have ? in it (with Hyves for example)
 	NSURL *url;
 	
-	if([authorizeURL.absoluteString rangeOfString:@"?"].location == NSNotFound)
+	if([authorizeURL.absoluteString rangeOfString:@"?"].location == NSNotFound) {
 		url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?oauth_token=%@", authorizeURL.absoluteString, requestToken.key]];
-	else 
+	} else { 
 		url = [NSURL URLWithString:[NSString stringWithFormat:@"%@&oauth_token=%@", authorizeURL.absoluteString, requestToken.key]];
-    
-	//NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?oauth_token=%@", authorizeURL.absoluteString, requestToken.key]];
-	
-	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?oauth_token=%@", authorizeURL.absoluteString, requestToken.key]];
+	}
 	
 	SHKOAuthView *auth = [[SHKOAuthView alloc] initWithURL:url delegate:self];
 	[[SHK currentHelper] showViewController:auth];	
