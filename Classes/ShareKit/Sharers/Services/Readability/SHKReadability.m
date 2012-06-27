@@ -26,7 +26,7 @@
 
 #import "SHKConfiguration.h"
 #import "SHKReadability.h"
-#import "JSONKit.h"
+#import <PINCH/JSONKit.h>
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 
 static NSString *const kSHKReadabilityUserInfo=@"kSHKReadabilityUserInfo";

@@ -28,7 +28,7 @@
 #import "SHKVkontakte.h"
 #import "SHKConfiguration.h"
 #import "SHKVkontakteOAuthView.h"
-#import "JSONKit.h"
+#import <PINCH/JSONKit.h>
 
 @interface SHKVkontakte()
 

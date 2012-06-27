@@ -30,7 +30,7 @@
 
 #import "SHKConfiguration.h"
 #import "SHKTwitter.h"
-#import "JSONKit.h"
+#import <PINCH/JSONKit.h>
 #import "SHKXMLResponseParser.h"
 #import "SHKiOS5Twitter.h"
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
