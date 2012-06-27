@@ -10,3 +10,6 @@
 [submodule "Submodules/objectiveflickr"]
 	path = Submodules/objectiveflickr
 	url = https://github.com/lukhnos/objectiveflickr.git
+[submodule "JSONKit"]
+	path = JSONKit
+	url = https://github.com/johnezang/JSONKit.git
