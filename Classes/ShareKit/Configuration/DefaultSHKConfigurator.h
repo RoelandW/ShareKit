@@ -64,8 +64,7 @@
 - (NSString*)twitterCallbackUrl;
 - (NSNumber*)twitterUseXAuth;
 - (NSString*)twitterUsername;
-- (NSString*)evernoteUserStoreURL;
-- (NSString*)evernoteNetStoreURLBase;
+- (NSString*)evernoteHost;
 - (NSString*)evernoteConsumerKey;
 - (NSString*)evernoteSecret;
 - (NSString*)flickrConsumerKey;
@@ -96,6 +95,10 @@
 - (NSNumber*)showActionSheetMoreButton;
 - (NSNumber*)allowOffline;
 - (NSNumber*)allowAutoShare;
+- (Class)SHKActionSheetSubclass;
+- (Class)SHKShareMenuSubclass;
+- (Class)SHKShareMenuCellSubclass;
+- (Class)SHKFormControllerSubclass;
 
 //SHKPrint
 - (NSNumber*)printOutputType;
