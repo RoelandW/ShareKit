@@ -522,6 +522,12 @@
 		7AEE044F160E1DB600FEC06E /* SHKPinboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E311DBE3B9004A1712 /* SHKPinboard.m */; };
 		7AEE0450160E1DC500FEC06E /* SHKReadItLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E611DBE3B9004A1712 /* SHKReadItLater.m */; };
 		7AEE0451160E1DD200FEC06E /* SHKTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C91DF411EBAE4800F31FAE /* SHKTumblr.m */; };
+		990C9B2D1629F4DD00A44B54 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 990C9B2B1629F4DD00A44B54 /* JSONKit.h */; };
+		990C9B2E1629F4DD00A44B54 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 990C9B2B1629F4DD00A44B54 /* JSONKit.h */; };
+		990C9B2F1629F4DD00A44B54 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 990C9B2B1629F4DD00A44B54 /* JSONKit.h */; };
+		990C9B301629F4DD00A44B54 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 990C9B2C1629F4DD00A44B54 /* JSONKit.m */; };
+		990C9B311629F4DD00A44B54 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 990C9B2C1629F4DD00A44B54 /* JSONKit.m */; };
+		990C9B321629F4DD00A44B54 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 990C9B2C1629F4DD00A44B54 /* JSONKit.m */; };
 		99C8D38F159B146E00DB7F6E /* SHKHyves.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99C8D382159B146E00DB7F6E /* SHKHyves.bundle */; };
 		99C8D390159B146E00DB7F6E /* SHKHyves.h in Headers */ = {isa = PBXBuildFile; fileRef = 99C8D383159B146E00DB7F6E /* SHKHyves.h */; };
 		99C8D391159B146E00DB7F6E /* SHKHyves.h in Headers */ = {isa = PBXBuildFile; fileRef = 99C8D383159B146E00DB7F6E /* SHKHyves.h */; };
@@ -836,14 +842,13 @@
 		7AEE041D160E1D5800FEC06E /* libPinboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPinboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEE042D160E1D5A00FEC06E /* libRead It Later.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRead It Later.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEE043D160E1D5B00FEC06E /* libTumblr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTumblr.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AF2523614F0499E00CE8709 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		7AF2523714F0499E00CE8709 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		7AF78BB114B71FD8008ACA5D /* SHKFormControllerLargeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKFormControllerLargeTextField.h; sourceTree = "<group>"; };
 		7AF78BB214B71FD8008ACA5D /* SHKFormControllerLargeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKFormControllerLargeTextField.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ShareKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ShareKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90E765A51418F2480026B656 /* ShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareKit.bundle; sourceTree = "<group>"; };
-		997C2FF7159B345C00CA8D56 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		997C2FF8159B345C00CA8D56 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		990C9B2B1629F4DD00A44B54 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		990C9B2C1629F4DD00A44B54 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		99C8D382159B146E00DB7F6E /* SHKHyves.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SHKHyves.bundle; sourceTree = "<group>"; };
 		99C8D383159B146E00DB7F6E /* SHKHyves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyves.h; sourceTree = "<group>"; };
 		99C8D384159B146E00DB7F6E /* SHKHyves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyves.m; sourceTree = "<group>"; };
@@ -1888,8 +1893,8 @@
 		997C2FF6159B345C00CA8D56 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
-				997C2FF7159B345C00CA8D56 /* JSONKit.h */,
-				997C2FF8159B345C00CA8D56 /* JSONKit.m */,
+				990C9B2B1629F4DD00A44B54 /* JSONKit.h */,
+				990C9B2C1629F4DD00A44B54 /* JSONKit.m */,
 			);
 			name = JSONKit;
 			path = Submodules/JSONKit;
@@ -2049,8 +2054,6 @@
 				99C8D39B159B146E00DB7F6E /* SHKHyvesTableViewCellWithRating.h in Headers */,
 				99C8D3A0159B146E00DB7F6E /* SHKHyvesTipForm.h in Headers */,
 				99C8D3A5159B146E00DB7F6E /* SHKHyvesTopAlignedTableViewCell.h in Headers */,
-				99C8D3AA159B146E00DB7F6E /* UITableViewCell+PMEasy.h in Headers */,
-				997C2FFA159B345C00CA8D56 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2177,6 +2180,7 @@
 				7A1AFD34160E14340086B98A /* SHKFormFieldCellSwitch.h in Headers */,
 				7A1AFD35160E14340086B98A /* SHKFormFieldCellOptionPicker.h in Headers */,
 				7A1AFD36160E14340086B98A /* SHKFormFieldCell_PrivateProperties.h in Headers */,
+				990C9B2F1629F4DD00A44B54 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2216,7 +2220,7 @@
 				99C8D39A159B146E00DB7F6E /* SHKHyvesTableViewCellWithRating.h in Headers */,
 				99C8D39F159B146E00DB7F6E /* SHKHyvesTipForm.h in Headers */,
 				99C8D3A4159B146E00DB7F6E /* SHKHyvesTopAlignedTableViewCell.h in Headers */,
-				99C8D3A9159B146E00DB7F6E /* UITableViewCell+PMEasy.h in Headers */,
+				990C9B2D1629F4DD00A44B54 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2385,6 +2389,7 @@
 				7AEE0396160E1B4200FEC06E /* SHKFormFieldCellSwitch.h in Headers */,
 				7AEE0397160E1B4200FEC06E /* SHKFormFieldCellOptionPicker.h in Headers */,
 				7AEE0398160E1B4200FEC06E /* SHKFormFieldCell_PrivateProperties.h in Headers */,
+				990C9B2E1629F4DD00A44B54 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3266,8 +3271,6 @@
 				99C8D39E159B146E00DB7F6E /* SHKHyvesTableViewCellWithRating.m in Sources */,
 				99C8D3A3159B146E00DB7F6E /* SHKHyvesTipForm.m in Sources */,
 				99C8D3A8159B146E00DB7F6E /* SHKHyvesTopAlignedTableViewCell.m in Sources */,
-				99C8D3AD159B146E00DB7F6E /* UITableViewCell+PMEasy.m in Sources */,
-				997C2FFC159B345C00CA8D56 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3392,6 +3395,7 @@
 			files = (
 				7A1AFD3B160E14520086B98A /* SHKiOS5Twitter.m in Sources */,
 				7A1AFD3C160E14520086B98A /* SHKTwitter.m in Sources */,
+				990C9B321629F4DD00A44B54 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3544,7 +3548,7 @@
 				99C8D39D159B146E00DB7F6E /* SHKHyvesTableViewCellWithRating.m in Sources */,
 				99C8D3A2159B146E00DB7F6E /* SHKHyvesTipForm.m in Sources */,
 				99C8D3A7159B146E00DB7F6E /* SHKHyvesTopAlignedTableViewCell.m in Sources */,
-				99C8D3AC159B146E00DB7F6E /* UITableViewCell+PMEasy.m in Sources */,
+				990C9B301629F4DD00A44B54 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3649,6 +3653,7 @@
 			files = (
 				7AEE03A1160E1BC600FEC06E /* SHKVkontakteOAuthView.m in Sources */,
 				7AEE03A2160E1BC600FEC06E /* SHKVkontakte.m in Sources */,
+				990C9B311629F4DD00A44B54 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
