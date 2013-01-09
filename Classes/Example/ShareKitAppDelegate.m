@@ -31,7 +31,7 @@
     [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     [configurator release];
     
-	[window addSubview:[navigationController view]];
+    window.rootViewController = navigationController;
     [window makeKeyAndVisible];
 	
 	navigationController.topViewController.title = SHKLocalizedString(@"Examples");
@@ -47,9 +47,15 @@
 	[SHK flushOfflineQueue];
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+	[SHKFacebook handleDidBecomeActive];
+}
+
 - (void)applicationWillTerminate:(UIApplication *)application 
 {
 	// Save data if appropriate
+	[SHKFacebook handleWillTerminate];
 }
 
 - (BOOL)handleOpenURL:(NSURL*)url

@@ -114,8 +114,12 @@
 	
 	// Remove the SHK view wrapper from the window (but only if the view doesn't have another modal over it)
 	// this happens when we have an options picker.
-	if (self.navigationController.topViewController == nil)
-		[[SHK currentHelper] viewWasDismissed];
+	if (self.navigationController.topViewController == nil) {
+        
+        if (![UIViewController instancesRespondToSelector:@selector(dismissViewControllerAnimated:completion:)]) {
+            [[SHK currentHelper] viewWasDismissed];
+        }
+    }
 }
 
 - (void)viewDidLoad
@@ -123,7 +127,10 @@
 	[super viewDidLoad];
 	
 	if (SHKCONFIG(formBackgroundColor) != nil)
-         self.tableView.backgroundColor = SHKCONFIG(formBackgroundColor);
+	{
+		self.tableView.backgroundView = nil;
+		self.tableView.backgroundColor = SHKCONFIG(formBackgroundColor);
+	}
 }
 
 

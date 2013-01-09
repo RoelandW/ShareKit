@@ -58,12 +58,17 @@
 // 
 //    Your CFBundleURLSchemes entry: fb555lite
 - (NSString*)facebookAppId {
-	return @"232705466797125";
+	return @"281987678567988";
 }
 
 - (NSString*)facebookLocalAppId {
 	return @"";
 }
+
+- (NSNumber*)forcePreIOS6FacebookPosting {
+	return [NSNumber numberWithBool:false];
+}
+
 // Read It Later - http://readitlaterlist.com/api/signup/ 
 - (NSString*)readItLaterKey {
 	return @"45aT6Vfvg66eWNebybd680gu13pdba3d";
@@ -88,6 +93,10 @@
  2. 'Application Type' should be set to BROWSER (not client)
  3. 'Callback URL' should match whatever you enter in SHKTwitterCallbackUrl.  The callback url doesn't have to be an actual existing url.  The user will never get to it because ShareKit intercepts it before the user is redirected.  It just needs to match.
  */
+
+- (NSNumber*)forcePreIOS5TwitterAccess {
+    return [NSNumber numberWithBool:false];
+}
 
 - (NSString*)twitterConsumerKey {
 	return @"48Ii81VO5NtDKIsQDZ3Ggw";
@@ -189,7 +198,6 @@
 - (NSString*)foursquareV2RedirectURI {
     return @"app://foursquare";
 }
-
 
 /*
  UI Configuration : Basic

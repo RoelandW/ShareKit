@@ -31,12 +31,17 @@
 #import "SHKSharer.h"
 #import "SHKShareItemDelegate.h"
 
+@interface SHKShareMenu()
+@property (retain) SHKSharer* limboSharer;
+@end
+
 @implementation SHKShareMenu
 
 @synthesize item;
 @synthesize tableData;
 @synthesize exclusions;
 @synthesize shareDelegate;
+@synthesize limboSharer;
 
 #pragma mark -
 #pragma mark Initialization
@@ -47,9 +52,9 @@
 	[tableData release];
 	[exclusions release];
 	[shareDelegate release];
+	[limboSharer release];
     [super dealloc];
 }
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -76,15 +81,23 @@
     [super viewDidLoad];
     
     if (SHKCONFIG(formBackgroundColor) != nil)
+	{
+		self.tableView.backgroundView = nil;
         self.tableView.backgroundColor = SHKCONFIG(formBackgroundColor);
+	}
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
 	
-	// Remove the SHK view wrapper from the window
-	[[SHK currentHelper] viewWasDismissed];
+	if (![UIViewController instancesRespondToSelector:@selector(dismissViewControllerAnimated:completion:)]) {
+        // Remove the SHK view wrapper from the window
+        [[SHK currentHelper] viewWasDismissed];
+    }
+	
+    if(self.limboSharer != nil)
+		[self.limboSharer share];
 }
 
 - (void)setItem:(SHKItem *)i
@@ -295,10 +308,11 @@
 		{
 			doShare = [shareDelegate aboutToShareItem:item withSharer:sharer];
 		}
-		if(doShare)
-			[sharer share];
 		
 		[[SHK currentHelper] hideCurrentViewControllerAnimated:YES];
+		
+		if(doShare)
+			self.limboSharer = sharer;
 	}
 }
 

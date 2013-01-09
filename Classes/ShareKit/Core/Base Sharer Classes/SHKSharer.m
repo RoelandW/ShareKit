@@ -180,7 +180,7 @@
 		self.item = [[[SHKItem alloc] init] autorelease];
 				
 		if ([self respondsToSelector:@selector(modalPresentationStyle)])
-			self.modalPresentationStyle = [SHK modalPresentationStyle];
+			self.modalPresentationStyle = [SHK modalPresentationStyleForController:self];
 		
 		if ([self respondsToSelector:@selector(modalTransitionStyle)])
 			self.modalTransitionStyle = [SHK modalTransitionStyle];
@@ -579,6 +579,41 @@
 
 #pragma mark -
 
+- (NSString *)tagStringJoinedBy:(NSString *)joinString allowedCharacters:(NSCharacterSet *)charset tagPrefix:(NSString *)prefixString tagSuffix:(NSString *)suffixString {
+    
+    NSMutableArray *cleanedTags = [NSMutableArray arrayWithCapacity:[self.item.tags count]];
+    NSCharacterSet *removeSet = [charset invertedSet];
+    
+    for (NSString *tag in self.item.tags) {
+        
+        NSString *strippedTag;
+        if (removeSet) {
+            strippedTag = [[tag componentsSeparatedByCharactersInSet:removeSet] componentsJoinedByString:@""];
+        } else {
+            strippedTag = tag;
+        }
+                                 
+        if ([strippedTag length] < 1) continue;
+        strippedTag = [strippedTag stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        if ([strippedTag length] < 1) continue;
+        
+        if ([prefixString length] > 0) {
+            strippedTag = [prefixString stringByAppendingString:strippedTag];
+        }
+        
+        if ([suffixString length] > 0) {
+            strippedTag = [strippedTag stringByAppendingString:suffixString];
+        }
+        
+        [cleanedTags addObject:strippedTag];
+    }
+    
+    if ([cleanedTags count] < 1) return @"";
+    return [cleanedTags componentsJoinedByString:joinString];
+}
+
+#pragma mark -
+
 - (void)updateItemWithForm:(SHKFormController *)form
 {
 	// Update item with new values from form
@@ -591,8 +626,15 @@
 		else if ([key isEqualToString:@"text"])
 			item.text = [formValues objectForKey:key];
 		
-		else if ([key isEqualToString:@"tags"])
-			item.tags = [formValues objectForKey:key];
+		else if ([key isEqualToString:@"tags"]) {
+            NSString *unparsedTags = [formValues objectForKey:key];
+            NSArray *tmpValues = [unparsedTags componentsSeparatedByString:@","];
+            NSMutableArray *values = [NSMutableArray arrayWithCapacity:[tmpValues count]];
+            for (NSString *a_tag in tmpValues) {
+                [values addObject:[a_tag stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]];
+            }
+			item.tags = values;
+        }
 		
 		else
 			[item setCustomValue:[formValues objectForKey:key] forKey:key];
@@ -703,8 +745,10 @@
 {
 	[super viewDidDisappear:animated];
 	
-	// Remove the SHK view wrapper from the window
-	[[SHK currentHelper] viewWasDismissed];
+	if (![UIViewController instancesRespondToSelector:@selector(dismissViewControllerAnimated:completion:)]) {
+        // Remove the SHK view wrapper from the window
+        [[SHK currentHelper] viewWasDismissed];
+    }
 }
 
 

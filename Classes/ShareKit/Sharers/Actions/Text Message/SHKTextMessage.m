@@ -35,13 +35,14 @@
 	[super viewDidDisappear:animated];
 	
 	// Remove the SHK view wrapper from the window (but only if the view doesn't have another modal over it)
-	if (self.modalViewController == nil)
-		[[SHK currentHelper] viewWasDismissed];
+	if (self.modalViewController == nil) {
+        if (![UIViewController instancesRespondToSelector:@selector(dismissViewControllerAnimated:completion:)]) {
+            [[SHK currentHelper] viewWasDismissed];
+        }
+    }
 }
 
 @end
-
-
 
 @implementation SHKTextMessage
 
@@ -116,12 +117,10 @@
 {	
 	MFMessageComposeViewController *composeView = [[[MFMessageComposeViewController alloc] init] autorelease];
 	composeView.messageComposeDelegate = self;
-	
-	NSString * body = [item customValueForKey:@"body"];
+  
+	NSString *body = item.text;
 	
 	if (!body) {
-		if (item.text != nil)
-			body = item.text;
 		
 		if (item.URL != nil)
 		{	
@@ -137,12 +136,13 @@
 		// fallback
 		if (body == nil)
 			body = @"";
-		
-		// save changes to body
-		[item setCustomValue:body forKey:@"body"];
 	}
-	
 	[composeView setBody:body];
+  
+  NSArray *toRecipients = self.item.textMessageToRecipients;
+  if (toRecipients)
+		[composeView setRecipients:toRecipients];
+  
 	[[SHK currentHelper] showViewController:composeView];
     [self retain]; //release is in callback, MFMessageComposeViewController does not retain its delegate
 	
