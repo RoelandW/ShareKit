@@ -111,7 +111,15 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	SHKHyvesTopAlignedTableViewCell* cell = [SHKHyvesTopAlignedTableViewCell cellForTableView:tableView style:UITableViewCellStyleDefault];
+	static NSString *cellIdentifier = @"SHKHyvesCell";
+	
+	SHKHyvesTopAlignedTableViewCell *cell = (SHKHyvesTopAlignedTableViewCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+
+	if (cell == nil)
+	{
+		cell = (SHKHyvesTopAlignedTableViewCell*)[[SHKHyvesTopAlignedTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+	}
+
 	[cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     cell.keyLabel.text = @"WWW";
     cell.keyLabel.textColor = [UIColor lightGrayColor];
