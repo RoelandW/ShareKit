@@ -238,25 +238,19 @@
 		7AE8DC7D165B549B004D99D2 /* DummyLibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8DC7B165B549B004D99D2 /* DummyLibFile.m */; };
 		7AE8DC80165B5730004D99D2 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C09F316122ED90023EE48 /* libfacebook_ios_sdk.a */; };
 		7AF9AAD9165B6C0400F92215 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF54548160BB0F200A93975 /* libsqlite3.0.dylib */; };
-		990ED518169D9EBA0023BD2C /* SHKHyves.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 990ED50B169D9EBA0023BD2C /* SHKHyves.bundle */; };
-		990ED519169D9EBA0023BD2C /* SHKHyves.h in Headers */ = {isa = PBXBuildFile; fileRef = 990ED50C169D9EBA0023BD2C /* SHKHyves.h */; };
-		990ED51A169D9EBA0023BD2C /* SHKHyves.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED50D169D9EBA0023BD2C /* SHKHyves.m */; };
-		990ED51B169D9EBA0023BD2C /* SHKHyves.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED50D169D9EBA0023BD2C /* SHKHyves.m */; };
-		990ED51C169D9EBA0023BD2C /* SHKHyvesStarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 990ED50E169D9EBA0023BD2C /* SHKHyvesStarView.h */; };
-		990ED51D169D9EBA0023BD2C /* SHKHyvesStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED50F169D9EBA0023BD2C /* SHKHyvesStarView.m */; };
-		990ED51E169D9EBA0023BD2C /* SHKHyvesStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED50F169D9EBA0023BD2C /* SHKHyvesStarView.m */; };
-		990ED51F169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 990ED510169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.h */; };
-		990ED520169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED511169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.m */; };
-		990ED521169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED511169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.m */; };
-		990ED522169D9EBA0023BD2C /* SHKHyvesTipForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 990ED512169D9EBA0023BD2C /* SHKHyvesTipForm.h */; };
-		990ED523169D9EBA0023BD2C /* SHKHyvesTipForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED513169D9EBA0023BD2C /* SHKHyvesTipForm.m */; };
-		990ED524169D9EBA0023BD2C /* SHKHyvesTipForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED513169D9EBA0023BD2C /* SHKHyvesTipForm.m */; };
-		990ED525169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 990ED514169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.h */; };
-		990ED526169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED515169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.m */; };
-		990ED527169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED515169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.m */; };
-		990ED528169D9EBA0023BD2C /* UITableViewCell+PMEasy.h in Headers */ = {isa = PBXBuildFile; fileRef = 990ED516169D9EBA0023BD2C /* UITableViewCell+PMEasy.h */; };
-		990ED529169D9EBA0023BD2C /* UITableViewCell+PMEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED517169D9EBA0023BD2C /* UITableViewCell+PMEasy.m */; };
-		990ED52A169D9EBA0023BD2C /* UITableViewCell+PMEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = 990ED517169D9EBA0023BD2C /* UITableViewCell+PMEasy.m */; };
+		99DEB65716F4B4E100713E25 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A57772B314BA0748003FC744 /* SSKeychain.m */; };
+		99DEB65F16F4B50400713E25 /* SHKHyves.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DEB63D16F4B4CF00713E25 /* SHKHyves.h */; };
+		99DEB66016F4B50400713E25 /* SHKHyves.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DEB63E16F4B4CF00713E25 /* SHKHyves.m */; };
+		99DEB66116F4B50400713E25 /* SHKHyvesStarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DEB63F16F4B4CF00713E25 /* SHKHyvesStarView.h */; };
+		99DEB66216F4B50400713E25 /* SHKHyvesStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DEB64016F4B4CF00713E25 /* SHKHyvesStarView.m */; };
+		99DEB66316F4B50400713E25 /* SHKHyvesTableViewCellWithRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DEB64116F4B4CF00713E25 /* SHKHyvesTableViewCellWithRating.h */; };
+		99DEB66416F4B50400713E25 /* SHKHyvesTableViewCellWithRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DEB64216F4B4CF00713E25 /* SHKHyvesTableViewCellWithRating.m */; };
+		99DEB66516F4B50400713E25 /* SHKHyvesTipForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DEB64316F4B4CF00713E25 /* SHKHyvesTipForm.h */; };
+		99DEB66616F4B50400713E25 /* SHKHyvesTipForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DEB64416F4B4CF00713E25 /* SHKHyvesTipForm.m */; };
+		99DEB66716F4B50400713E25 /* SHKHyvesTopAlignedTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DEB64516F4B4CF00713E25 /* SHKHyvesTopAlignedTableViewCell.h */; };
+		99DEB66816F4B50400713E25 /* SHKHyvesTopAlignedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DEB64616F4B4CF00713E25 /* SHKHyvesTopAlignedTableViewCell.m */; };
+		99DEB66916F4B50400713E25 /* UITableViewCell+PMEasy.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DEB64716F4B4CF00713E25 /* UITableViewCell+PMEasy.h */; };
+		99DEB66A16F4B50400713E25 /* UITableViewCell+PMEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DEB64816F4B4CF00713E25 /* UITableViewCell+PMEasy.m */; };
 		AABBECB8162F063F009D46E4 /* SHKPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = BA465F1E14CC3C5A00B52394 /* SHKPrint.m */; };
 		AABBECC3162F0719009D46E4 /* SHKLogout.m in Sources */ = {isa = PBXBuildFile; fileRef = E68738BF1416795C00D8C3DD /* SHKLogout.m */; };
 		AABBECCC162F0756009D46E4 /* SHKCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536B911DBE3B9004A1712 /* SHKCopy.m */; };
@@ -865,7 +859,6 @@
 		7A74C18616E8A64400CFDFC3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		7AA4056E146F1D6400685C81 /* ShareKitDemoConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareKitDemoConfigurator.h; path = Example/ShareKitDemoConfigurator.h; sourceTree = "<group>"; };
 		7AA4056F146F1D6400685C81 /* ShareKitDemoConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareKitDemoConfigurator.m; path = Example/ShareKitDemoConfigurator.m; sourceTree = "<group>"; };
-		7AAE8C9B16EB950800429C51 /* SHKPlurk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKPlurk.h; path = Plurk/SHKPlurk.h; sourceTree = "<group>"; };
 		7AAE8C9C16EB950800429C51 /* SHKPlurk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKPlurk.m; path = Plurk/SHKPlurk.m; sourceTree = "<group>"; };
 		7AAE8CA516EB960500429C51 /* libPlurk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlurk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB5342E1552AADD00171BCE /* libShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShareKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -893,19 +886,20 @@
 		7AF78BB214B71FD8008ACA5D /* SHKFormControllerLargeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKFormControllerLargeTextField.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ShareKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ShareKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90E765A51418F2480026B656 /* ShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareKit.bundle; sourceTree = "<group>"; };
-		990ED50B169D9EBA0023BD2C /* SHKHyves.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SHKHyves.bundle; sourceTree = "<group>"; };
-		990ED50C169D9EBA0023BD2C /* SHKHyves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyves.h; sourceTree = "<group>"; };
-		990ED50D169D9EBA0023BD2C /* SHKHyves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyves.m; sourceTree = "<group>"; };
-		990ED50E169D9EBA0023BD2C /* SHKHyvesStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesStarView.h; sourceTree = "<group>"; };
-		990ED50F169D9EBA0023BD2C /* SHKHyvesStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesStarView.m; sourceTree = "<group>"; };
-		990ED510169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesTableViewCellWithRating.h; sourceTree = "<group>"; };
-		990ED511169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesTableViewCellWithRating.m; sourceTree = "<group>"; };
-		990ED512169D9EBA0023BD2C /* SHKHyvesTipForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesTipForm.h; sourceTree = "<group>"; };
-		990ED513169D9EBA0023BD2C /* SHKHyvesTipForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesTipForm.m; sourceTree = "<group>"; };
-		990ED514169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesTopAlignedTableViewCell.h; sourceTree = "<group>"; };
-		990ED515169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesTopAlignedTableViewCell.m; sourceTree = "<group>"; };
-		990ED516169D9EBA0023BD2C /* UITableViewCell+PMEasy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+PMEasy.h"; sourceTree = "<group>"; };
-		990ED517169D9EBA0023BD2C /* UITableViewCell+PMEasy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PMEasy.m"; sourceTree = "<group>"; };
+		99DEB63C16F4B4CF00713E25 /* SHKHyves.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SHKHyves.bundle; sourceTree = "<group>"; };
+		99DEB63D16F4B4CF00713E25 /* SHKHyves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyves.h; sourceTree = "<group>"; };
+		99DEB63E16F4B4CF00713E25 /* SHKHyves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyves.m; sourceTree = "<group>"; };
+		99DEB63F16F4B4CF00713E25 /* SHKHyvesStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesStarView.h; sourceTree = "<group>"; };
+		99DEB64016F4B4CF00713E25 /* SHKHyvesStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesStarView.m; sourceTree = "<group>"; };
+		99DEB64116F4B4CF00713E25 /* SHKHyvesTableViewCellWithRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesTableViewCellWithRating.h; sourceTree = "<group>"; };
+		99DEB64216F4B4CF00713E25 /* SHKHyvesTableViewCellWithRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesTableViewCellWithRating.m; sourceTree = "<group>"; };
+		99DEB64316F4B4CF00713E25 /* SHKHyvesTipForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesTipForm.h; sourceTree = "<group>"; };
+		99DEB64416F4B4CF00713E25 /* SHKHyvesTipForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesTipForm.m; sourceTree = "<group>"; };
+		99DEB64516F4B4CF00713E25 /* SHKHyvesTopAlignedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKHyvesTopAlignedTableViewCell.h; sourceTree = "<group>"; };
+		99DEB64616F4B4CF00713E25 /* SHKHyvesTopAlignedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKHyvesTopAlignedTableViewCell.m; sourceTree = "<group>"; };
+		99DEB64716F4B4CF00713E25 /* UITableViewCell+PMEasy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+PMEasy.h"; sourceTree = "<group>"; };
+		99DEB64816F4B4CF00713E25 /* UITableViewCell+PMEasy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PMEasy.m"; sourceTree = "<group>"; };
+		99DEB65D16F4B4E100713E25 /* libHyves.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHyves.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57772B214BA0748003FC744 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		A57772B314BA0748003FC744 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		A57772B614BA1900003FC744 /* ObjectiveFlickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveFlickr.h; sourceTree = "<group>"; };
@@ -1146,6 +1140,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99DEB65816F4B4E100713E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AABBECB9162F063F009D46E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1346,6 +1347,7 @@
 				7A49DBC316BC193E004B7E78 /* libReadability.a */,
 				7A203D0A16EB7DA200421995 /* libHatena.a */,
 				7AAE8CA516EB960500429C51 /* libPlurk.a */,
+				99DEB65D16F4B4E100713E25 /* libHyves.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1800,8 +1802,7 @@
 		43A536C011DBE3B9004A1712 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				990ED50A169D9EBA0023BD2C /* Hyves *
-				7AAE8C9916EB94F200429C51 /* Plurk */,
+				990ED50A169D9EBA0023BD2C /* Hyves */,
 				7A203CFE16EB775400421995 /* Hatena */,
 				7A0F91CB156B9FCE009CB40A /* Delicious */,
 				B7EFCD8914C6B966004910F1 /* Diigo */,
@@ -2116,15 +2117,6 @@
 			name = ShareKitLibrary;
 			sourceTree = "<group>";
 		};
-		7AAE8C9916EB94F200429C51 /* Plurk */ = {
-			isa = PBXGroup;
-			children = (
-				7AAE8C9B16EB950800429C51 /* SHKPlurk.h */,
-				7AAE8C9C16EB950800429C51 /* SHKPlurk.m */,
-			);
-			name = Plurk;
-			sourceTree = "<group>";
-		};
 		7AB536111552E26800171BCE /* ShareKitLibraryResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2146,19 +2138,19 @@
 		990ED50A169D9EBA0023BD2C /* Hyves */ = {
 			isa = PBXGroup;
 			children = (
-				990ED50B169D9EBA0023BD2C /* SHKHyves.bundle */,
-				990ED50C169D9EBA0023BD2C /* SHKHyves.h */,
-				990ED50D169D9EBA0023BD2C /* SHKHyves.m */,
-				990ED50E169D9EBA0023BD2C /* SHKHyvesStarView.h */,
-				990ED50F169D9EBA0023BD2C /* SHKHyvesStarView.m */,
-				990ED510169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.h */,
-				990ED511169D9EBA0023BD2C /* SHKHyvesTableViewCellWithRating.m */,
-				990ED512169D9EBA0023BD2C /* SHKHyvesTipForm.h */,
-				990ED513169D9EBA0023BD2C /* SHKHyvesTipForm.m */,
-				990ED514169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.h */,
-				990ED515169D9EBA0023BD2C /* SHKHyvesTopAlignedTableViewCell.m */,
-				990ED516169D9EBA0023BD2C /* UITableViewCell+PMEasy.h */,
-				990ED517169D9EBA0023BD2C /* UITableViewCell+PMEasy.m */,
+				99DEB63C16F4B4CF00713E25 /* SHKHyves.bundle */,
+				99DEB63D16F4B4CF00713E25 /* SHKHyves.h */,
+				99DEB63E16F4B4CF00713E25 /* SHKHyves.m */,
+				99DEB63F16F4B4CF00713E25 /* SHKHyvesStarView.h */,
+				99DEB64016F4B4CF00713E25 /* SHKHyvesStarView.m */,
+				99DEB64116F4B4CF00713E25 /* SHKHyvesTableViewCellWithRating.h */,
+				99DEB64216F4B4CF00713E25 /* SHKHyvesTableViewCellWithRating.m */,
+				99DEB64316F4B4CF00713E25 /* SHKHyvesTipForm.h */,
+				99DEB64416F4B4CF00713E25 /* SHKHyvesTipForm.m */,
+				99DEB64516F4B4CF00713E25 /* SHKHyvesTopAlignedTableViewCell.h */,
+				99DEB64616F4B4CF00713E25 /* SHKHyvesTopAlignedTableViewCell.m */,
+				99DEB64716F4B4CF00713E25 /* UITableViewCell+PMEasy.h */,
+				99DEB64816F4B4CF00713E25 /* UITableViewCell+PMEasy.m */,
 			);
 			path = Hyves;
 			sourceTree = "<group>";
@@ -2430,6 +2422,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99DEB65916F4B4E100713E25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DEB65F16F4B50400713E25 /* SHKHyves.h in Headers */,
+				99DEB66116F4B50400713E25 /* SHKHyvesStarView.h in Headers */,
+				99DEB66316F4B50400713E25 /* SHKHyvesTableViewCellWithRating.h in Headers */,
+				99DEB66516F4B50400713E25 /* SHKHyvesTipForm.h in Headers */,
+				99DEB66716F4B50400713E25 /* SHKHyvesTopAlignedTableViewCell.h in Headers */,
+				99DEB66916F4B50400713E25 /* UITableViewCell+PMEasy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2891,6 +2896,23 @@
 			productReference = 7AC2A3A016597F4C0089ABE8 /* libSina Weibo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		99DEB65516F4B4E100713E25 /* Hyves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99DEB65A16F4B4E100713E25 /* Build configuration list for PBXNativeTarget "Hyves" */;
+			buildPhases = (
+				99DEB65616F4B4E100713E25 /* Sources */,
+				99DEB65816F4B4E100713E25 /* Frameworks */,
+				99DEB65916F4B4E100713E25 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hyves;
+			productName = ShareKitLibrary;
+			productReference = 99DEB65D16F4B4E100713E25 /* libHyves.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		AABBECB6162F063F009D46E4 /* Print */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AABBECBB162F063F009D46E4 /* Build configuration list for PBXNativeTarget "Print" */;
@@ -3324,6 +3346,7 @@
 				7A49DBBB16BC193E004B7E78 /* Readability */,
 				7A203D0216EB7DA200421995 /* Hatena */,
 				7AAE8C9D16EB960500429C51 /* Plurk */,
+				99DEB65516F4B4E100713E25 /* Hyves */,
 			);
 		};
 /* End PBXProject section */
@@ -3610,6 +3633,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC2A3A116597F9C0089ABE8 /* SHKSinaWeibo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99DEB65616F4B4E100713E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DEB65716F4B4E100713E25 /* SSKeychain.m in Sources */,
+				99DEB66016F4B50400713E25 /* SHKHyves.m in Sources */,
+				99DEB66216F4B50400713E25 /* SHKHyvesStarView.m in Sources */,
+				99DEB66416F4B50400713E25 /* SHKHyvesTableViewCellWithRating.m in Sources */,
+				99DEB66616F4B50400713E25 /* SHKHyvesTipForm.m in Sources */,
+				99DEB66816F4B50400713E25 /* SHKHyvesTopAlignedTableViewCell.m in Sources */,
+				99DEB66A16F4B50400713E25 /* UITableViewCell+PMEasy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4746,6 +4783,53 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "Sina Weibo";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		99DEB65B16F4B4E100713E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = Hyves;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		99DEB65C16F4B4E100713E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = Hyves;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -5925,6 +6009,15 @@
 			buildConfigurations = (
 				7AC2A39E16597F4C0089ABE8 /* Debug */,
 				7AC2A39F16597F4C0089ABE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99DEB65A16F4B4E100713E25 /* Build configuration list for PBXNativeTarget "Hyves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99DEB65B16F4B4E100713E25 /* Debug */,
+				99DEB65C16F4B4E100713E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
