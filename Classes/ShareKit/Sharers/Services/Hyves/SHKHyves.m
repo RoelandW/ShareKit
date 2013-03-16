@@ -270,7 +270,7 @@
 	
 	 
 	// Determine which type of share to do
-	if (item.shareType == SHKShareTypeText) // sharing a URL
+	if (self.item.shareType == SHKShareTypeText) // sharing a URL
 	{
 		
 		[self showTipForm];
@@ -329,7 +329,7 @@
 	
 	//TODO: not really best practice to transfer a relation like this
 	//use 
-	rootView.bodyTextView.text = item.text;
+	rootView.bodyTextView.text = self.item.text;
 
 	[self pushViewController:rootView animated:NO];
 	
