@@ -57,8 +57,7 @@
 
 + (BOOL)canShareImage
 {
-    NSURL *instagramURL = [NSURL URLWithString:@"instagram://app"];
-	return 	[[UIApplication sharedApplication] canOpenURL:instagramURL];
+    return YES;
 }
 
 + (BOOL)shareRequiresInternetConnection
@@ -79,6 +78,12 @@
 
 #pragma mark -
 #pragma mark Configuration : Dynamic Enable
+
++ (BOOL)canShare
+{
+	NSURL *instagramURL = [NSURL URLWithString:@"instagram://app"];
+	return [[UIApplication sharedApplication] canOpenURL:instagramURL];
+}
 
 + (BOOL)canAutoShare
 {
@@ -102,7 +107,7 @@
 	//clear it out and make it fresh
 	[[NSFileManager defaultManager] removeItemAtPath:docPath error:nil];
 	if ([[NSFileManager defaultManager] createDirectoryAtPath:dirPath withIntermediateDirectories:YES attributes:nil error:nil]) {
-		UIImage* tmpImg = item.image;
+		UIImage* tmpImg = self.item.image;
 		float tmpCGWidth = CGImageGetWidth(tmpImg.CGImage);
 		float tmpCGHeight = CGImageGetHeight(tmpImg.CGImage);
 		float smaller = tmpCGWidth < tmpCGHeight ? tmpCGWidth : tmpCGHeight;
@@ -133,8 +138,8 @@
 		[[NSFileManager defaultManager] createFileAtPath:docPath contents:imgData attributes:nil];
 		NSURL* url = [NSURL fileURLWithPath:docPath isDirectory:NO ];
 		self.dic = [UIDocumentInteractionController interactionControllerWithURL:url];
-		self.dic.UTI = @"com.instagram.photo";
-		NSString *captionString = [NSString stringWithFormat:@"%@%@%@", ([item.title length] ? item.title : @""), ([item.title length] && [item.tags count] ? @" " : @""), [self tagStringJoinedBy:@" " allowedCharacters:[NSCharacterSet alphanumericCharacterSet] tagPrefix:@"#" tagSuffix:nil]];
+		self.dic.UTI = @"com.instagram.exclusivegram";
+		NSString *captionString = [NSString stringWithFormat:@"%@%@%@", ([self.item.title length] ? self.item.title : @""), ([self.item.title length] && [self.item.tags count] ? @" " : @""), [self tagStringJoinedBy:@" " allowedCharacters:[NSCharacterSet alphanumericCharacterSet] tagPrefix:@"#" tagSuffix:nil]];
 		self.dic.annotation = @{@"InstagramCaption" : captionString};
 		self.dic.delegate = self;
 		UIView* bestView = self.view;
@@ -149,7 +154,7 @@
 		}
 		if(bestView.window != nil){
 			[self retain];	// retain ourselves until the menu has done it's job or we'll nuke the popup (see documentInteractionControllerDidDismissOpenInMenu)
-			[self.dic presentOpenInMenuFromRect:item.popOverSourceRect inView:bestView animated:YES];
+			[self.dic presentOpenInMenuFromRect:self.item.popOverSourceRect inView:bestView animated:YES];
 		}
 		return YES;
 	}
