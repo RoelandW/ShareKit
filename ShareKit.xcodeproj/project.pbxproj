@@ -543,6 +543,13 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = "facebook-ios-sdk";
 		};
+		991C648216F8B9DC00D0ED8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99DEB71F16F4B9DF00713E25;
+			remoteInfo = Hyves;
+		};
 		AA6C09F216122ED90023EE48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA6C09EA16122ED90023EE48 /* facebook-ios-sdk.xcodeproj */;
@@ -1090,10 +1097,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99DEB75916F4BAE100713E25 /* libHyves.a in Frameworks */,
 				7AAE8CA916EB965200429C51 /* libPlurk.a in Frameworks */,
 				7A203D0C16EB7E2300421995 /* libHatena.a in Frameworks */,
 				456BADAD1691095B005B3077 /* libGoogle Plus.a in Frameworks */,
+				99DEB75916F4BAE100713E25 /* libHyves.a in Frameworks */,
 				7A49DBC716BC19BD004B7E78 /* libReadability.a in Frameworks */,
 				7AC28F0B165A21C2006D7441 /* libCopy.a in Frameworks */,
 				7AC28F0C165A21C2006D7441 /* libDelicious.a in Frameworks */,
@@ -2835,6 +2842,7 @@
 			);
 			dependencies = (
 				7AAE8CA816EB964900429C51 /* PBXTargetDependency */,
+				991C648316F8B9DC00D0ED8E /* PBXTargetDependency */,
 				7A203D0E16EB7F5100421995 /* PBXTargetDependency */,
 				7A49DBC616BC199F004B7E78 /* PBXTargetDependency */,
 				7AC28ECC165A1EE7006D7441 /* PBXTargetDependency */,
@@ -4025,6 +4033,11 @@
 			isa = PBXTargetDependency;
 			name = "facebook-ios-sdk";
 			targetProxy = 7AE8DC7E165B5725004D99D2 /* PBXContainerItemProxy */;
+		};
+		991C648316F8B9DC00D0ED8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99DEB71F16F4B9DF00713E25 /* Hyves */;
+			targetProxy = 991C648216F8B9DC00D0ED8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
